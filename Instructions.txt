@@ -1,0 +1,100 @@
+overlaychest User Manual 
+
+Review
+
+The overlaychest_ app is a desktop application designed to track open chests in Fortnite, the probability of obtaining rare rewards, and monitor your progress over time. It supports multiple user profiles, history tracking, quick statistics viewing, and custom settings.
+
+---
+
+Getting Started
+
+1. Launching the App
+Double‑click the overlaychest_.exe file to launch the app.
+The main window will appear by default and will be positioned on top of other windows.
+2. User Interface analysis
+
+Header Panel:
+
+Profiles: Manage multiple profiles (for example, for different accounts or family members).
+Keyboard shortcuts: View current hotkey assignments for quick keyboard control.
+History: View the full log of your actions with quick search and filtering.
+Close button (×): Closes the application.
+Collapse button (up/down): Hides or displays the main control panel.
+
+Basic statistics:
+
+Open chests: Displays the current number of open chests..
+Treasure clocks: Check this item if the special bonus “Treasure clocks” is active. The probabilities will be adjusted..
+Reward lines:
+
+Each line displays:
+The name of the reward
+The probability of receiving this reward (updated instantly)
+The “Received” button: Check whether you have received this reward (pressing the button turns this feature on/off).
+Reset button: Resets the progress required to obtain this reward.
+Controls:
+
++ Buttons – : Increase or decrease the number of open chests by 1.
+Set: Allows you to enter the exact chest number directly (set and click “Set”).
+Global reset: Clears all counters (chests and rewards).
+---
+
+Hotkeys (keyboard shortcuts)
+F7: Increase the number of chests by 1
+F8: Decrease the number of chests by 1 (cannot go below zero)
+F9: Global reset (all chests and rewards)
+These hotkeys work anywhere in Windows, not just when the app is active!
+How to view hotkeys
+To quickly access the keyboard shortcuts, click the “Hotkeys” button in the header.
+---
+
+Profiles – managing multiple trackers
+Click the “Profiles” button to:
+Add a new profile (each with its own data about chests and rewards).
+Rename or delete profiles
+Switch between saved profiles (data is saved for each).
+---
+
+Reward tracking
+Each line with rewards shows your chances of receiving a specific reward depending on the contents of your chests.
+When you receive this reward in Fortnite:
+Click the “Received” button in the corresponding line with the reward.
+This line will display “RECEIVED” (for information only; automatic resetting is not provided).
+Use the “Reset” button for the reward line if you want to clear the “received” status and start tracking only this reward from scratch.
+---
+
+History and logging
+Click the “History” button to open a window with a log of all actions:All increases, decreases, and resetting of the number of items in the chest, as well as receiving and resetting rewards, are displayed.
+The log displays: a timestamp, the action, the chest number, and what reward is available (if any).
+At the top is a search bar: enter anything (a number, the name of the reward, a date, etc.), and the list will instantly filter out the relevant entries.
+---
+
+“Treasure Clock” option
+Check the “Treasure Clock” checkbox if Fortnite is hosting a special event that increases the drop rate of items.
+This will increase all chances of receiving a reward by 1.5 times.
+---
+
+Data saving, backup, and portability.
+All your data (including history and profiles) is automatically saved after any changes in the JSON file (chest_profiles.json).
+Backups are created automatically before importing/exporting profiles.
+You can import your statistics to another computer by copying the chest_profiles.json file.
+---
+
+Changing the app icon
+To change the application icon (.exe), use the generated .ico file as the icon during compilation with PyInstaller (with the --icon=iconfile.ico parameter) or embed it in the already compiled .exe file using Resource Hacker.
+---
+
+Recommendations
+The tracker is a purely utility app that does not interact with Fortnite. Updating the tracker is at your discretion.
+You can leave the tracker open while playing and use hotkeys to register data as quickly as possible.
+Use the history to analyze successful streaks, the drop of certain rewards, or to track your overall activity in any season.
+---
+
+Common troubleshooting methods
+Hotkeys not working? — Make sure that only one instance of the application is running and that no other application is intercepting the same hotkeys (for example, other overlays or streaming tools).
+File.exe doesn’t launch? — Make sure all files are present and not blocked by Windows Defender or an antivirus.
+Profiles/history missing? — Make sure the application has write permissions to the folder and isn’t running from inside ZIP archives.
+---
+
+Contacts/Support — k.cheh101@gmail.com
+You can send error reports, suggestions for improvement, or advice from the community to the developer or leave your suggestions in the project repository, if possible.
